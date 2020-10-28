@@ -1,0 +1,211 @@
+body {
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #011627;
+}
+
+header {
+    text-align: center;
+    background-color: #828282;
+}
+img {
+    width: 250px;
+    height: 185px;
+    border: firebrick solid 3px;
+}
+img:hover {
+    box-shadow: 0 0 4px 4px firebrick;
+}
+.contactimg {
+    width: 490px;
+    height: 150px;
+    margin-left: 60px;
+    border: darkcyan solid 4px;
+}
+.contactimg:hover {
+    box-shadow: none;
+}
+.resumeimg {
+    width: 80%;
+    height: 80%;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1 {
+    padding-top: 1em;
+    color: #fdfffc;
+}
+h2 {
+    padding: 1em;
+    color: #fdfffc;
+}
+.indexh2 {
+    color: darkcyan;
+}
+.contacth {
+    color: #424242;
+    text-align: center;
+    font-size: xx-large;
+    padding: .5em;
+}
+.overviewh {
+    padding: 1em;
+    color: darkcyan;
+}
+h4 {
+    color: #011627;
+}
+.link {
+    text-decoration: none;
+    color: darkcyan;
+}
+.link:hover {
+    color: firebrick;
+}
+.resume {
+    background-color: #828282;
+    padding-bottom: 5px;
+}
+#overview {
+    background-color: gainsboro;
+    min-height: 35vh;
+    color: #011627;
+}
+#prosummary {
+    background-color: gainsboro;
+    min-height: 35vh;
+    color: #fdfffc;
+}
+p {
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: large;
+    line-height: 150%;
+}
+.contactp {
+    color: #424242;
+    font-size: x-large;
+    text-align: center;
+    line-height: 200%;
+}
+.overviewp {
+    font-size: 175%;
+    line-height: 100%;
+    color: #424242;
+    padding-bottom: 20px;
+    margin-top: 0%;
+}
+.column {
+    float: left;
+    width: 50%;
+    background-color: gainsboro;
+    min-height: 50vh;
+}
+.row {
+    background-color: gainsboro;
+}
+
+footer {
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    background-color: silver;
+    padding: 20px 0;
+    margin-top: 1em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: silver;
+    padding: 10px;
+}
+  
+.grid-item {
+    background-color: gainsboro;
+    border: 1.5px solid #177272;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#177272;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: x-large;
+}
+li a:hover {
+    color: firebrick;
+    background-color: gainsboro;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+  
+.img-container {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 479px){
+    .column {
+        width: 100%;
+    }
+    .contactimg {
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: none;
+    }
+    li a {
+        font-size: large;
+    }
+    .contactp {
+        font-size: 15px;
+    }
+    .column {
+        min-height: 20vh;
+    }
+    .resumeimg {
+        margin: auto;
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .column {
+        width: 100%;
+    }
+    .contactimg {
+        display: none;
+    }
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+    .column {
+        min-height: 20vh;
+    }
+    
+}
